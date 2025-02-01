@@ -6,9 +6,56 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Tailwind Practice 01</title>
 </head>
-<body>
+<body class="lg:max-w-[100%]  mx-auto lg:mx-[5%] ">
     <header>
 
+        <nav class="max-sm:m-4 flex items-center justify-between mr-4.5
+        lg:mt-10"
+        >
+            <div class="flex items-center gap-[10px]">
+                <img class=" lg:w-[56px] lg:h-[35px]" src="images/Frame.png" alt="">
+                <a href="#">
+                    <h3><span class="text-[#A4BC46] text-2xl font-bold">Penguin</span>
+                    <span class="font-bold text-[#363958] text-2xl">Fashion</span>
+                </h3>
+                </a>
+            </div>
+
+            <div class="md:hidden">
+               <img src="images/Group.png" alt="hamburger menu">
+            </div>
+
+            <div class="max-sm:hidden flex items-center list-none gap-[4vw] font-medium text-[#3C3C3C ]">
+                 <li>Home</li>
+                 <li>Product</li>
+                 <li>About Us</li>
+                 <li>Contact Us</li>
+            </div>
+        </nav> 
+<!-- banner section -->
+        <div>
+            <!-- be the penguin of winter -->
+            <div class="flex column">
+                <h2>
+                    <span>Be the penguins</span> 
+                    <br>
+                    <span>of winter</span>    
+                </h2>
+                <p>
+                    <span>Lorem Ipsum is simply dummy text of the printing</span> 
+                    <br>
+                    <span>and typesetting industry.</span>
+                </p>
+                <button class="flex gap-1.5 items-center bg-[#A4BC46] px-[36px] py-[18px] rounded-[10px]">
+                    <img class="w-6 h-6 " src="images/shopping-cart.png" alt="">
+                    <p class="font-medium text-white uppercase">Buy Now</p>
+                </button>
+            </div>
+            <!-- banner image -->
+            <div>
+                <img src="images/model.png" alt="">
+            </div>
+        </div>
     </header>
 
     <main>
